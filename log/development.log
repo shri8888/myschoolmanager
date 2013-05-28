@@ -845,3 +845,18 @@ Processing UserController#header_link (for 127.0.0.1 at 2011-05-08 10:48:39) [PO
 Rendered layouts/_reminder_count (15.9ms)
 Rendered user/_header_link (113.6ms)
 Completed in 308ms (View: 116, DB: 9) | 200 OK [http://localhost/user/header_link]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#login (for 127.0.0.1 at 2013-05-28 09:12:43) [GET]
+  Parameters: {"action"=>"login", "controller"=>"user"}
+  [4;35;1mConfiguration Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `configurations`[0m
+  [4;36;1mConfiguration Load (0.0ms)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`config_key` = 'Locale') LIMIT 1[0m
+  [4;35;1mNews Columns (15.6ms)[0m   [0mSHOW FIELDS FROM `news`[0m
+Expired fragment: views/News_latest_fragment (0.0ms)
+  [4;36;1mConfiguration Load (0.0ms)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`config_key` = 'LogoName') LIMIT 1[0m
+Rendering template within layouts/login
+Rendering user/login
+  [4;35;1mSchoolDetail Load (0.0ms)[0m   [0mSELECT * FROM `school_details` LIMIT 1[0m
+  [4;36;1mSchoolDetail Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `school_details`[0m
+Completed in 906ms (View: 188, DB: 16) | 200 OK [http://localhost/]
