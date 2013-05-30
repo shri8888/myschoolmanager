@@ -1,0 +1,300 @@
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+C:\fedena1>git push heroku
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+fatal: 'heroku' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+C:\fedena1> git config --global push.default matching
+
+C:\fedena1>git push heroku master
+fatal: 'heroku' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+C:\fedena1>git remote show
+myorigin
+myorigin1
+origin
+origin123
+push1
+
+C:\fedena1>git push origin123 master
+Username for 'https://github.com': shri8888
+Password for 'https://shri8888@github.com':
+Everything up-to-date
+
+C:\fedena1>git push heroku master
+fatal: 'heroku' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+C:\fedena1>git push
+Username for 'https://github.com': shri8888
+Password for 'https://shri8888@github.com':
+fatal: Authentication failed
+
+C:\fedena1>git push heroku master
+fatal: 'heroku' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+C:\fedena1>git push Heroku master
+fatal: 'Heroku' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+C:\fedena1>heroku create omsai2
+Creating omsai2... done, region is us
+http://omsai2.herokuapp.com/ | git@heroku.com:omsai2.git
+Git remote heroku added
+
+C:\fedena1>bundle install
+The source :rubygems is deprecated because HTTP requests are insecure.
+Please change your source to 'https://rubygems.org' if possible, or 'http://ruby
+gems.org' if not.
+Fetching gem metadata from http://rubygems.org/..........
+Fetching gem metadata from http://rubygems.org/..
+Resolving dependencies...
+Using rake (0.8.7)
+Using activesupport (2.3.5)
+Using rack (1.0.1)
+Using actionpack (2.3.5)
+Using actionmailer (2.3.5)
+Using activerecord (2.3.5)
+Using activeresource (2.3.5)
+Using cgi_multipart_eof_fix (2.5.0)
+Using daemons (1.1.9)
+Using declarative_authorization (0.5.1)
+Using eventmachine (1.0.3)
+Using fattr (2.2.1)
+Using gem_plugin (0.2.3)
+Using i18n (0.4.2)
+Installing libv8 (3.11.8.17)
+Gem::Installer::ExtensionBuildError: ERROR: Failed to build gem native extension
+.
+
+C:/Ruby187/bin/ruby.exe extconf.rb
+creating Makefile
+The system cannot find the path specified.
+The system cannot find the path specified.
+The system cannot find the path specified.
+C:/Ruby187/lib/ruby/gems/1.8/gems/libv8-3.11.8.17/ext/libv8/builder.rb:49:in `se
+tup_python!': libv8 requires python 2 to be installed in order to build, but it
+is currently not available (RuntimeError)
+        from C:/Ruby187/lib/ruby/gems/1.8/gems/libv8-3.11.8.17/ext/libv8/builder
+.rb:35:in `build_libv8!'
+        from C:/Ruby187/lib/ruby/gems/1.8/gems/libv8-3.11.8.17/ext/libv8/builder
+.rb:34:in `chdir'
+        from C:/Ruby187/lib/ruby/gems/1.8/gems/libv8-3.11.8.17/ext/libv8/builder
+.rb:34:in `build_libv8!'
+        from C:/Ruby187/lib/ruby/gems/1.8/gems/libv8-3.11.8.17/ext/libv8/locatio
+n.rb:24:in `install!'
+        from extconf.rb:7
+
+
+Gem files will remain installed in C:/Ruby187/lib/ruby/gems/1.8/gems/libv8-3.11.
+8.17 for inspection.
+Results logged to C:/Ruby187/lib/ruby/gems/1.8/gems/libv8-3.11.8.17/ext/libv8/ge
+m_make.out
+An error occurred while installing libv8 (3.11.8.17), and Bundler cannot
+continue.
+Make sure that `gem install libv8 -v '3.11.8.17'` succeeds before bundling.
+
+C:\fedena1>git add --all
+
+C:\fedena1>git commit 'third'
+error: pathspec ''third'' did not match any file(s) known to git.
+
+C:\fedena1>git commit-am  'third'
+git: 'commit-am' is not a git command. See 'git --help'.
+
+C:\fedena1>git commit -am  'third'
+# On branch master
+nothing to commit, working directory clean
+
+C:\fedena1>git push heroku master
+The authenticity of host 'heroku.com (50.19.85.132)' can't be established.
+RSA key fingerprint is 8b:48:5e:67:0e:c9:16:47:32:f2:87:0c:1f:c8:60:ad.
+Are you sure you want to continue connecting (yes/no)? y
+Please type 'yes' or 'no': yes
+Warning: Permanently added 'heroku.com,50.19.85.132' (RSA) to the list of known
+hosts.
+Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+C:\fedena1>ssh-keygen -t rsa
+'ssh-keygen' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\fedena1>git push heroku master
+Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+C:\fedena1>heroku keys:add
+Could not find an existing public key.
+Would you like to generate one? [Yn] y
+Generating new SSH public key.
+ !    Could not generate key: 'ssh-keygen' is not recognized as an internal or e
+xternal command,
+ !    operable program or batch file.
+
+C:\fedena1>heroku keys:add kk
+Uploading SSH public key kk... failed
+ !    Could not upload SSH public key: key file 'kk' does not exist
+
+C:\fedena1>heroku keys:add public_key.pub
+Uploading SSH public key public_key.pub... failed
+ !    Could not upload SSH public key: key file 'public_key.pub' does not exist
+
+C:\fedena1>heroku keys:add C:\fedena1\public_key.pub
+Uploading SSH public key C:\fedena1\public_key.pub... failed
+ !    Could not upload SSH public key: key file 'C:\fedena1\public_key.pub' does
+ not exist
+
+C:\fedena1>heroku keys:add
+Could not find an existing public key.
+Would you like to generate one? [Yn] Y
+Generating new SSH public key.
+ !    Could not generate key: 'ssh-keygen' is not recognized as an internal or e
+xternal command,
+ !    operable program or batch file.
+
+C:\fedena1>heroku keys:add C:\fedena1\public_key.pub
+Uploading SSH public key C:\fedena1\public_key.pub... failed
+ !    Could not upload SSH public key: key file 'C:\fedena1\public_key.pub' does
+ not exist
+
+C:\fedena1>heroku keys:add "C:\fedena1\public_key.pub"
+Uploading SSH public key C:\fedena1\public_key.pub... failed
+ !    Could not upload SSH public key: key file 'C:\fedena1\public_key.pub' does
+ not exist
+
+C:\fedena1>heroku keys:add "public_key.pub"
+Uploading SSH public key public_key.pub... failed
+ !    Could not upload SSH public key: key file 'public_key.pub' does not exist
+
+C:\fedena1>heroku keys:add "public_key"
+Uploading SSH public key public_key... failed
+ !    Could not upload SSH public key: key file 'public_key' does not exist
+
+C:\fedena1>ssh
+'ssh' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\fedena1>heroku keys:add "publickey"
+Uploading SSH public key publickey... failed
+ !    Could not upload SSH public key: key file 'publickey' does not exist
+
+C:\fedena1>heroku keys:add publickey
+Uploading SSH public key publickey... failed
+ !    Could not upload SSH public key: key file 'publickey' does not exist
+
+C:\fedena1>heroku keys:add "C:\public_key"
+Uploading SSH public key C:\public_key... failed
+ !    Could not upload SSH public key: key file 'C:\public_key' does not exist
+
+C:\fedena1>c:\
+'c:\' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\fedena1>cd\
+
+C:\>heroku keys:add "C:\public_key"
+Uploading SSH public key C:\public_key... failed
+ !    Could not upload SSH public key: key file 'C:\public_key' does not exist
+
+C:\>heroku keys:add publickey
+Uploading SSH public key publickey... done
+
+C:\>cd fedena1
+
+C:\fedena1>git push heroku master
+Warning: Permanently added the RSA host key for IP address '50.19.85.156' to the
+ list of known hosts.
+Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+C:\fedena1>heroku login
+Enter your Heroku credentials.
+Email: shri.8888@gmail.com
+Password (typing will be hidden):
+Authentication successful.
+
+C:\fedena1>git push heroku master
+Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+C:\fedena1>heroku keys:add publickey
+Uploading SSH public key publickey... failed
+ !    Could not upload SSH public key: key file 'publickey' does not exist
+
+C:\fedena1>heroku keys:add publickey
+Uploading SSH public key publickey... failed
+ !    Application error
+
+C:\fedena1>git push heroku master
+Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+C:\fedena1>git push heroku master
+Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+C:\fedena1>cd\
+
+C:\>cd omsai
+
+C:\omsai>git push heroku master
+fatal: Not a git repository (or any of the parent directories): .git
+
+C:\omsai>cd
+C:\omsai
+
+C:\omsai>cd\
+
+C:\>
